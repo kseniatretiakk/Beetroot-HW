@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Forms practice</title>
+</head>
+<body>
+    <form action="https://www.google.com" method="get">
+        <fieldset>
+         <legend id="legend">Заповни наступну форму:</legend> <br>
+         <label for="name">Повне імʼя</label>
+         <input type="text" name="name" id="name" required> <br> <br>
+
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" required> <br> <br>
+
+         <label for="password">Пароль</label>
+         <input type="password" name="password" id="password" required> <br> <br>
+
+         <label for="validation">Пароль ще раз</label>
+         <input type="password" name="password1" id="validation" required> <br> <br>
+
+           <div class="gender">
+             Стать: 
+             <label for="woman">жіноча</label> 
+             <input type="radio" name="sex" value="жіноча" id="woman" required> 
+             <label for="man">чоловіча</label>
+             <input type="radio" name="sex" value="чоловіча" id="man" required> 
+           </div>
+           <br>
+ 
+           <div>
+             <label for="age">Вік</label>
+             <input type="number" name="age" id="age" max="70" min="18" required> 
+           </div>
+           <br>
+
+           <div>
+            <label for="course">Курс</label>
+            <select name="course" id="course" required>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="PM">PM</option>
+                <option value="Manual QA">Manual QA</option>
+            </select>
+           </div>
+           <br>
+
+           <div>
+            <label for="adrress">Повна адреса</label>
+            <textarea name="adrress" id="adrress" cols="30" rows="6" placeholder="Країна, регіон, вулиця" required></textarea>
+           </div>
+           <br>
+
+           <div>
+            <input type="checkbox" name="agreement" id="agreement" required>
+            <label for="agreement">Я погоджуюсь з обробкою персональних даних</label>
+           </div>
+           <br>
+
+           <button type="reset">Очистити форму</button>
+           <button type="submit">Зареєструватися</button>
+
+
+
+
+
+
+           
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

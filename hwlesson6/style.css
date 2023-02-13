@@ -1,0 +1,13 @@
+form {
+    width: 400px;
+    background-color: rgb(162, 162, 220);
+}
+ 
+#legend {
+    font-size: 25px;
+    margin-left: 40px;
+ }
+
+ .gender {
+    display: line;
+ }
