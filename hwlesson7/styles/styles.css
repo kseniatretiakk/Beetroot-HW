@@ -1,0 +1,197 @@
+
+body { 
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: black;
+}
+
+body h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+
+.container {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    padding: none;
+}
+
+ .nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 400;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.nav  {
+  border-bottom: 0.5px solid #828282;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+
+
+
+.name {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #070707;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.about-me {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 100px 0;
+    font-weight: 500px;
+}
+
+.info-about h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 46px;   
+}
+
+.about-me p {
+    margin: 0 0 30px;
+}
+
+.about-me :last-child {
+    margin-bottom: 0;
+}
+
+
+.redactors {
+    width: 170px;
+    text-align: center; 
+    margin-left: 96px;
+}
+
+.redactors:first-child {
+    margin-left: 0;
+}
+
+.block-redactors  {
+    display: flex;      
+}
+
+
+.section-redactors {
+    padding: 100px 0;
+}
+
+.section-redactors h2, p {
+    text-align: center;
+    margin-top: 0;
+}
+
+.section-redactors h2 {
+    margin-bottom: 20px;
+}
+
+.section-redactors p {
+    margin-bottom: 50px;
+}
+
+.portfolio-works {
+  text-align: center;
+}
+
+.portfolio-section {
+    padding: 100px 0;
+    background-color: #F6F6F6;
+}
+
+.portfolio {
+    margin-bottom: 46px;
+}
+
+.portfolio-section img {
+    margin-bottom: 40px;
+}
+
+.portfolio-section a {
+    color: black;
+}
+
+.examples {
+    margin-bottom: 70px;
+}
+
+.examples:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contacts {
+    margin: 0 0 13px 0;
+}
+
+.footer:first-child {
+    margin-bottom: 13px;
+}
+
+.footer p {
+    margin: 0 auto 85px;
+}
+
+.send-message-btn {
+    display: block;
+    padding: 8px 14px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto 30px;
+    line-height: 24px;
+    font-weight: 700;
+    font-size:  18px;
+    transition: all .5s;
+}
+
+.social-icons img {
+    margin: 0px 50px 0 0;
+     
+}
+
+.social-icons :last-child {
+    margin-right: 0;
+}
+
+.social-icons {
+    margin-bottom: 54px;
+}
+
+.footer-below a {
+    text-decoration: none;
+  color: #828282;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
