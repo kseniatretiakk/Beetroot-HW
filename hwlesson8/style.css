@@ -139,6 +139,10 @@ body {
 
 .custom-checkbox input:checked + label:after {
   display: block;
+}
+
+.custom-checkbox input:checked + label {
+  display: block;
   text-decoration: line-through;
 }
 
