@@ -1,1 +1,1 @@
-link to materials table [click here](https://kseniatretiakk.github.io/Beetroot-HW/index.html).
+link to materials table [click here](https://kseniatretiakk.github.io/Beetroot-HW/).
