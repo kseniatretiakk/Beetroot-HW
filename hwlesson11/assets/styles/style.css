@@ -1,0 +1,199 @@
+*,
+:before,
+:after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+width: 1440px;
+margin: 0 auto;
+font-family: 'Roboto', sans-serif;
+}
+
+.container {
+width: 1170px;
+margin: 0 auto;
+}
+
+.longread {
+width: 1440px;
+padding-top: 120px;       
+}
+
+.architection,
+.nature {
+margin-bottom: 120px;
+}
+
+.architection, 
+.nature, 
+.people {
+cursor: pointer;
+}
+
+img {
+width: 100%;
+height: 100%;
+border-radius: 20px;    
+}
+
+.nature__title,
+.people__title,
+.architection__title {
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+margin-bottom: 80px;
+text-align: center;
+font-family: "Delius Unicase", cursive;
+}
+
+.photos {
+width: 100%;
+max-height: 100%;
+position: relative;
+}
+
+.photos:after {
+content:'';
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+transition: all 0.7s;
+border-radius: 20px;
+}
+
+.photos:hover:after {
+background: none;
+}
+
+.photos__caption {
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #ffffff;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+padding: 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 20px;
+transition: all 0.5s;
+background: linear-gradient(to top, rgba(0,0,0,0.3) 19%, rgba(0,0,0,0));
+}
+
+.architection-photos {
+display: grid;
+grid-template: repeat(3, 1fr) / repeat(3, 1fr) ;
+gap: 30px;
+}
+
+.photo-tower {
+grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.photo-street {
+grid-area: 1 / 2 / 2 / 4 ;
+}
+
+.photo-city {
+grid-area: 2 / 1 / 2 / 3;
+}
+
+.photo-cathedral {
+grid-area: 2 / 3 / 3 / 4;
+}
+
+.photo-oldtown {
+grid-area: 3 / 1 / 4 / 2;
+}
+
+.photo-bridge {
+grid-area: 3 / 2 / 4 / 4;
+
+}
+
+.nature-photos {
+display: grid;
+grid-template: repeat(4, 1fr) / repeat(3, 1fr) ;
+gap: 30px;
+}
+
+.photo__waterfall {
+grid-area: 1 / 1 / 2 / 2;
+}
+    
+.photo__sunrice {
+grid-area: 1 / 2 / 2 / 4 ;
+}
+      
+.photo__canyon {
+grid-area: 2 / 1 / 4 / 3;
+}
+    
+.photo__island {
+grid-area: 2 / 3 / 4 / 4;
+}
+    
+.photo__lavender {
+grid-area: 4 / 1 / 5 / 3;
+}
+    
+.photo__tree {
+grid-area: 4 / 3 / 5 / 4;
+}
+
+.people__photos{
+display: grid;
+grid-template: repeat(5, 1fr) / repeat(3, 1fr) ;
+gap: 30px;
+}
+    
+.photo__black-dress {
+grid-area: 1 / 1 / 2 / 2;
+}
+        
+.photo__yellow-costume {
+grid-area: 1 / 2 / 3 / 3;
+}
+          
+.photo__black-white {
+grid-area: 1 / 3 / 2 / 4;
+}
+        
+.photo__face-profile {
+grid-area: 2 / 1 / 3 / 2;
+}
+        
+.photo__oranges-girl {
+grid-area: 2 / 3 / 4 / 4;
+}
+        
+.photo__on-bed {
+grid-area: 3 / 1 / 5 / 2;
+}
+
+.photo__street-boy{
+grid-area: 3 / 2 / 4 / 3;
+}
+
+.photo__four-people {
+grid-area: 4 / 2 / 5 / 4;
+}
+
+.photo__dreadlocks {
+grid-area: 5 / 1 / 6 / 3;
+}
+
+.photo__lovers-grass {
+grid-area: 5 / 3 / 6 / 4;
+}
