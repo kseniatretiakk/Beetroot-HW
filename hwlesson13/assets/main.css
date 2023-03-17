@@ -73,7 +73,7 @@ body {
 .--bg-image {
     background-image: url(./images/bg-picture.png);
     background-repeat: no-repeat;
-    background-position: top 39% right 23%; 
+    background-position: top 80px right 0; 
     background-attachment: fixed;
     
 }
