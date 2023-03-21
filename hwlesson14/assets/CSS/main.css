@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: white;
+    --color-blue: #007BFF;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Roboto R';
+}
+
+.container {
+    max-width: 570px;
+    width: 100%;
+    margin: 10vh auto;
+}
+
+form {
+    max-width: 570px;
+    width: 100%;
+    min-height: 590px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: 'Roboto R';
+    padding: 35px 34px 16px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+#legend {
+    margin: 0 0 20px 0;
+    font-family: 'Roboto B';
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.input__name-lastname,
+.input__country-city {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.block {
+   margin-bottom: 20px;
+}
+
+.input:hover {
+  border: 1px solid #007BFF;
+  border-radius: 6px; 
+}
+
+.input {
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.label,
+.email-input-field {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.text-email {
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+}
+
+.email {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    background-color: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-family: 'Roboto B';
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.form__policy {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    letter-spacing: -0.1px;
+}
+ 
+.form__policy a {
+    color: var(--color-blue);
+}
+
+.form__login {
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    letter-spacing: -0.2px;
+}
+
+.form__login :first-child {
+    margin-right: 18.5px;   
+}
+
+.form__login :last-child {
+    color: var(--color-blue);
+}
+
+.form__policy:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #E4E4E4;
+    width: 100%; 
+    margin: 20px auto;
+}
+
+.sex {
+    display: inline-flex;
+}
+
+.input__sex {
+    position: relative;
+}
+
+.sex-input {
+    opacity: 0;
+}
+
+.radio-label:before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #E4E4E4;
+    position: absolute;
+    left: 0;
+    top: 0;    
+}
+
+.radio-label:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 0.5px solid #E4E4E4;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    opacity: 0;
+}
+
+.sex-input:checked + .radio-label:before {
+    background-color: #007BFF;
+}
+
+.sex-input:checked + .radio-label:after {
+    opacity: 1;
+}
+
+.radio-label{
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+/*select*/
+
+.input__country {
+    position: relative;
+}
+
+.input__country select {
+    background: none;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    appearance: none;
+    color:  #8b8a8a;
+    padding: 8px 38px 8px 10px;
+    font-size: 15px;
+    width: 245px;
+    height: 38px; 
+}
+
+.input__country-city {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.input__country:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #969696 transparent transparent transparent;
+    position: absolute;
+    left: 212px;
+    top: 44px;
+}
+
+
+/*Sign Up*/
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.file-btn::after {
+    content: url(../images/Photo\ Camera.svg); 
+    display: block; 
+    position: absolute; 
+    left: 10.5em;
+    bottom: 0.4em;
+}
+
+.file-label {
+    max-width: 141px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    position: relative;
+    top: 2.4em;
+    color: #969696;
+    display: block;
+}
+
+.file-btn {
+    position: relative;
+}
+
+.file-bin {
+    display: flex;
+    padding-top: 11px;
+}
+
+.wrapper__zip-phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__name-email {
+    display: flex;
+    justify-content: space-between;   
+    max-height: 68px;  
+}
+
+.wrapper__img-file-bin {
+   display: flex;
+   max-width: 400px;
+   width: 100%;
+   justify-content: flex-start; 
+}
+
+.update__button {
+    width: 10em;
+}
+
+.file-input {
+    display: block;
+    height: 30px;
+    width: 141px;
+    opacity: 0;
+}
+
+.file-btn {
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    display: block;
+    height: 30px;
+    width: 141px; 
+    position: absolute; 
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+}
+
+.button__bin {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    background: var(--color-white);
+}
+
+.button__bin::after {
+    content: url(../images/Trash.svg);
+}
+
+.file {
+    position: relative;
+    margin-right: 10px;
+}
+
+.profile-photo {
+    position: relative;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hwlesson14</title>
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <link rel="stylesheet" href="./assets/CSS/fonts.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <form action="#">
+                 <legend id="legend">Create an Account</legend>
+                 <div class="input__name-lastname block">
+                  <div class="input__name">
+                    <label  class="name label" for="name">First Name</label>
+                    <div class="name-input-field">
+                        <input class="name input" type="text" name="name" id="name" required>
+                    </div>
+                  </div>
+                  <div class="input__lastname">
+                    <label  class="lastname label" for="lastname">Last Name</label>
+                    <div class="lastname-input-field">
+                        <input class="lastname input" type="text" name="lastname" id="lastname" required>
+                    </div>
+                  </div>
+                 </div>  
+                 
+
+                 <div class="input__email block">
+                    <label  class="email label" for="email">E-mail</label>
+                    <div class="email-input-field">
+                        <input class="email input" type="email" name="email" id="email" minlength="8" required>
+                    </div>
+                    <div class="email-text">
+                       <p class="text-email">We'll never share your email with anyone else.</p> 
+                    </div>
+                 </div>
+
+                 <div class="sex block">
+                    <div class="input__sex">
+                        <input class="sex-input" type="radio" name="sex" id="male" value="male" required>
+                        <label class="radio-label" for="male">Male</label>
+                     </div>
+                     <div class="input__sex">
+                        <input  class="sex-input" type="radio" name="sex" id="female" value="female" required>
+                        <label class="radio-label" for="female" style="left: 40px;">Female</label>
+                     </div>
+                 </div>
+                
+                 
+                 <div class="input__country-city block">
+                    <div class="input__country">
+                        <label  class="country label" for="country">Country</label>
+                        <select class="country-select" name="country" id="country" required>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Scotland">Scotland</option>
+                        </select>
+                     </div>
+                     <div class="input__city">
+                        <label  class="city label" for="city">City</label>
+                        <div class="city-input-field">
+                            <input class="city input" type="text" name="city" id="city" required>
+                        </div>
+                     </div>    
+                 </div>
+
+                 <div class="form__button block">
+                    <button class="button" type="submit">Sign Up</button>
+                 </div>
+
+                 <div class="form__policy block">
+                   <p>By clicking the 'Sign Up' button, you confirm that you accept our <br><a href="#">Terms of Use</a>
+                    and <a href="#">Privacy Policy</a></p>                         
+                 </div>
+
+                 <div class="form__login block">
+                    <span>Have an account?</span>
+                    <span><a href="signup.html">Log In</a></span>
+                 </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    
+</body>
+</html>

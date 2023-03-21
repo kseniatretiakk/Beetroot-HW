@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <link rel="stylesheet" href="./assets/CSS/fonts.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__content">
+                <form action="#">
+                 <legend id="legend">Profile</legend>
+                 <div class="wrapper">
+                    <div class="wrapper__img-file-bin block">
+                        <img class="profile-photo" src="./assets/images/1.png" alt="">
+                    
+                        <div class="file-bin">
+                            <div class="file">
+                                <button type="button" class="file-btn">
+                                    <input class="file-input" type="file" name="file" id="file" accept=".png, .jpeg, .jpg">                    
+                                </button>
+                                <p class="file-label">Up to 1 MB (300x300 px)</p>
+                            </div>
+            
+                            <div class="bin">
+                                <button type="button" class="button__bin">
+                                 <i class="bin-icon" src="../images/Photo Camera.svg"></i>
+                                </button>
+                            </div>
+                        </div>
+                       
+                     </div>
+    
+                 </div>
+                 
+                 <div class="wrapper__name-email block">
+                  <div class="input__name-profile">
+                    <label  class="name label" for="name">Name</label>
+                    <div class="name-input-field">
+                        <input class="name input" type="text" name="name" id="name" required>
+                    </div>
+                  </div> 
+
+                  <div class="input__email-profile">
+                    <label  class="email label" for="email">E-mail</label>
+                    <div class="email-input-field">
+                        <input class="email-input input" type="email" name="email" id="email" minlength="8" required>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <div class="input__country-city">
+                    <div class="input__country">
+                        <label  class="country label" for="country">Country</label>
+                        <select class="country-select block" name="country" id="country" required>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Scotland">Scotland</option>
+                        </select>
+                     </div>
+                     <div class="input__city block">
+                        <label  class="city label" for="city">City</label>
+                        <div class="city-input-field">
+                            <input class="city input" type="text" name="city" id="city" required>
+                        </div>
+                     </div>    
+                 </div>
+
+                 <div class="wrapper__zip-phone block">
+                    <div class="zip">
+                        <label  class="zip-label label" for="zip">Zip Code</label>
+                        <div class="zip-input-field">
+                            <input class="zip input" type="text" name="zip" id="zip" minlength="6" required>
+                        </div>
+                    </div>
+    
+                    <div class="phone">
+                        <label  class="phone-label label" for="phone">Phone Number</label>
+                        <div class="phone-input-field">
+                            <input class="phone input" type="phone" name="phone" id="phone" minlength="9" required>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="update__button block">
+                    <button class="button" type="submit">Update</button>
+                 </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
