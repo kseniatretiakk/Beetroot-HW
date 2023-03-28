@@ -1,0 +1,600 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h3 {
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Playfair Display R";
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 39px;
+  font-size: 40px;
+}
+
+.background {
+  margin: 0 auto;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btn {
+  background: none;
+  color: #F1897B;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Lato 700";
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+}
+
+.header {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(4.5px);
+          backdrop-filter: blur(4.5px);
+  line-height: 80px;
+  padding: 24px 0;
+  margin: 0 auto 150px auto;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+}
+.header__logo {
+  display: flex;
+}
+
+.nav {
+  font-family: "Lato 300";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+}
+.nav__list {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.nav__list a {
+  color: #262A3F;
+  text-decoration: none;
+}
+.nav__list:after {
+  content: " ";
+  border-bottom: 3px solid #F1897B;
+  max-width: 47px;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.intro {
+  position: relative;
+  padding-bottom: 152px;
+}
+.intro__title {
+  max-width: 523px;
+  margin-bottom: 20px;
+}
+.intro h1 {
+  font-family: "Playfair Display R";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+}
+.intro h1 span {
+  color: #85BBB1;
+  font-family: "Playfair Display RI";
+  font-style: italic;
+}
+.intro__subtitle {
+  max-width: 439px;
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.button-intro {
+  background: none;
+  color: #F1897B;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Lato 700";
+  font-size: 20px;
+  line-height: 20px;
+  position: relative;
+}
+.button-intro:focus {
+  border: 0.5px solid #E64F3A;
+}
+.button-intro:hover::after {
+  border-bottom: 13px solid #E64F3A;
+}
+.button-intro:after {
+  content: " ";
+  border-bottom: 13px solid #F1897B;
+  max-width: 112px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  opacity: 0.3;
+}
+
+.info {
+  position: relative;
+  padding-bottom: 120px;
+}
+.info__content {
+  display: flex;
+  justify-content: space-between;
+}
+.info__second-block {
+  background: #FFFFFF;
+  opacity: 0.9;
+  width: 770px;
+  max-height: 580px;
+  position: relative;
+  left: -170px;
+  top: 45px;
+  margin-right: -170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-block__numbers {
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.second-block__text-button {
+  max-width: 400px;
+  padding: 45px 0 150px 0;
+}
+.second-block__text {
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.8;
+  color: #262A3F;
+  margin-bottom: 50px;
+}
+.second-block__button button::after {
+  content: " ";
+  border-bottom: 13px solid #F1897B;
+  max-width: 172px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  opacity: 0.3;
+}
+.second-block__button button:hover::after {
+  border-bottom: 13px solid #E64F3A;
+}
+
+.number {
+  font-family: "Playfair Display R";
+  font-size: 68px;
+  line-height: 72px;
+  color: #262A3F;
+  margin-bottom: 12px;
+}
+.number span {
+  font-family: "Playfair Display R";
+  font-size: 40px;
+  line-height: 50px;
+  opacity: 0.1;
+}
+
+.number-caption {
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.benefits__cards {
+  display: grid;
+  row-gap: 60px;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  margin-bottom: 120px;
+}
+
+.benefit__card {
+  max-width: 570px;
+  width: 100%;
+  max-height: 340px;
+  height: 100%;
+  padding: 50px 0 52px 35px;
+  border-top: 1px solid #E4E4E4;
+}
+.benefit h2 {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.benefit p {
+  max-width: 500px;
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.slogan__wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/quote-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 300px 160px 160px;
+}
+.slogan__content {
+  max-width: 710px;
+  max-height: 200px;
+}
+.slogan__content::after {
+  content: url(../images/vector.svg);
+  position: relative;
+  bottom: 230px;
+  right: 60px;
+}
+.slogan__content :first-child {
+  font-family: "Lato R";
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  letter-spacing: 0.04em;
+}
+.slogan__content :nth-child(2) {
+  font-family: "Playfair Display RI";
+  font-style: italic;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
+}
+
+.video__wrapper {
+  padding: 120px 100px 120px 100px;
+}
+.video__ipad-frame {
+  border: 1px solid #E4E4E4;
+  border-radius: 32px;
+  padding: 31px 70px 31px 30px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.video__ipad-frame::before {
+  content: "";
+  border: 1px solid #E4E4E4;
+  border-radius: 32px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 8px;
+  top: 294px;
+}
+.video__ipad-frame::after {
+  content: "";
+  border: 1px solid #E4E4E4;
+  border-radius: 32px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 14px;
+  top: 283px;
+}
+.video__video {
+  opacity: 0.9;
+  border-radius: 8px;
+}
+.video__caption :nth-child(1) {
+  font-family: "Playfair Display R";
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.video__caption :nth-child(2) {
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 880px;
+}
+
+.promises {
+  position: relative;
+  display: flex;
+  padding-bottom: 120px;
+}
+.promises__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.promises__left-side {
+  width: 100%;
+  height: 100%;
+}
+.promises__right-side {
+  max-width: 770px;
+  background: #FFFFFF;
+  opacity: 0.9;
+  max-height: 450px;
+  height: 100%;
+  position: absolute;
+  right: 304px;
+  top: 48px;
+  margin-right: -170px;
+  padding: 75px 0 75px 70px;
+  display: grid;
+  row-gap: 70px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+.promises__btn {
+  border: 1px solid #E4E4E4;
+  padding: 33px 94px 37px 87px;
+}
+.promises__btn:after {
+  content: " ";
+  border-bottom: 13px solid #F1897B;
+  max-width: 116px;
+  width: 100%;
+  position: absolute;
+  top: 43px;
+  left: 98px;
+  opacity: 0.3;
+}
+.promises__btn:hover::after {
+  border-bottom: 13px solid #E64F3A;
+}
+.promises .right-side__fourth {
+  margin-bottom: 10px;
+}
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  max-height: 115px;
+  height: 100%;
+}
+.card :nth-child(1):not(button) {
+  font-family: "Playfair Display R";
+  font-size: 24px;
+  line-height: 48px;
+  color: #262A3F;
+  max-height: 40px;
+}
+.card :nth-child(2) {
+  max-height: 60px;
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 30px;
+  color: #262A3F;
+  opacity: 0.8;
+}
+
+.reviews__wrapper {
+  padding-bottom: 100px;
+}
+.reviews__title-subtitle h2 {
+  margin-bottom: 20px;
+}
+.reviews__title-subtitle p {
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+.reviews__cards {
+  display: grid;
+  gap: 30px;
+  grid-template: repeat(1, 3fr)/repeat(3, 1fr);
+}
+.reviews__card {
+  max-width: 370px;
+  max-height: 340px;
+  padding: 30px 40px 30px 40px;
+}
+.reviews__card :nth-child(2) {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.review-text {
+  font-family: "Lato R";
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-align: start;
+  max-width: 290px;
+  margin-bottom: 26px;
+}
+
+.first {
+  background-size: cover;
+  background-image: url(../images/image1.jpg);
+}
+
+.second {
+  background-size: cover;
+  background-image: url(../images/image2.jpg);
+}
+
+.third {
+  background-size: cover;
+  background-image: url(../images/image3.jpg);
+}
+
+.contact-form__wrapper {
+  border-bottom: 1px solid #E4E4E4;
+  border-top: 1px solid #E4E4E4;
+  padding: 60px 0 104px 0;
+  display: flex;
+}
+.contact-form__contact {
+  max-width: 470px;
+  width: 100%;
+  margin-right: 230px;
+}
+.contact-form__contact :nth-child(1) {
+  margin-bottom: 29px;
+}
+.contact-form__form {
+  max-width: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  border-bottom: 1px solid rgba(38, 42, 63, 0.2);
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+.form [placeholder] {
+  font-family: "Playfair Display RI";
+  font-weight: thin;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 44px;
+  opacity: 0.5;
+  letter-spacing: 0.08em;
+}
+.form__btn {
+  text-align: start;
+  display: block;
+}
+.form__btn:after {
+  content: " ";
+  border-bottom: 13px solid #F1897B;
+  max-width: 163px;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  opacity: 0.3;
+}
+.form__btn:hover::after {
+  border-bottom: 13px solid #E64F3A;
+}
+
+.footer {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__light-font {
+  font-family: "Lato 300";
+  font-size: 14px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.6;
+}
+.footer__darker-font {
+  font-family: "Lato R";
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+}
+
+.made-by :nth-child(1) {
+  margin-right: 12px;
+}
+
+.made-by a {
+  text-decoration: none;
+}
+
+.policy :nth-child(1) {
+  margin-right: 32px;
+}
+
+.h2 {
+  font-family: "Playfair Display R";
+  font-size: 40px;
+  line-height: 48px;
+  color: #262A3F;
+}
+
+p {
+  font-family: "Lato 300";
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.7;
+}
+
+.italic-span {
+  color: #85BBB1;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Playfair Display RI";
+  font-weight: thin;
+}/*# sourceMappingURL=index.css.map */

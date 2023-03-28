@@ -1,0 +1,40 @@
+
+.slogan {
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/quote-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        padding: 100px 300px 160px 160px; 
+    }
+
+    &__content {
+        max-width: 710px;
+        max-height: 200px;
+
+        &::after {
+            content: url(../images/vector.svg);
+            position: relative;
+            bottom: 230px;
+            right: 60px;   
+        }
+
+        & :first-child {
+            font-family: 'Lato R';
+            font-size: 32px;
+            line-height: 46px;
+            margin-bottom: 40px;
+            color: #FFFFFF;
+            letter-spacing: 0.04em;
+        }
+        & :nth-child(2) {
+            font-family: 'Playfair Display RI';
+            font-style: italic;
+            font-size: 20px;
+            line-height: 20px;
+            color: #FFFFFF;
+            letter-spacing: 0.08em;
+        }
+    }
+}

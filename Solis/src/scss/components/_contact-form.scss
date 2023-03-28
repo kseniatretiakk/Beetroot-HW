@@ -1,0 +1,65 @@
+.contact-form {
+    &__wrapper {
+        border-bottom: 1px solid #E4E4E4;
+        border-top: 1px solid #E4E4E4;
+        padding: 60px 0 104px 0;
+        display: flex;
+    }
+
+    &__contact {
+        max-width: 470px;
+        width: 100%;
+        margin-right: 230px;
+
+        & :nth-child(1) {
+            margin-bottom: 29px ;
+        }
+    }
+
+    &__form {
+        max-width: 470px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        border-bottom: 1px solid rgb(38, 42, 63, 0.2);
+        margin-bottom: 40px; 
+        padding-left: 10px;
+    }
+
+    & [placeholder] {
+        font-family: 'Playfair Display RI';
+        font-weight: thin;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 44px;
+        opacity: 0.5;
+        letter-spacing: 0.08em;
+    } 
+
+    &__btn {
+        text-align: start;
+        display: block;
+        &:after {
+            content: " ";
+            border-bottom: 13px solid #F1897B;
+            max-width: 163px;
+            width: 100%;
+            position: absolute;
+            top: 10px;
+            left: 11px;
+            opacity: 0.3;
+        }
+
+        &:hover::after {
+            border-bottom: 13px solid #E64F3A;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.header {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4.5px);
+    line-height: 80px;
+    padding: 24px 0;
+    margin: 0 auto 150px auto;
+
+    &__content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__logo {
+        display: flex;
+    }
+}
+
+.nav {
+    font-family: 'Lato 300';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #262A3F;
+  
+    &__list {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        & a {
+            color: #262A3F;
+            text-decoration: none;
+        }
+        &:after{
+            content: " ";
+            border-bottom: 3px solid #F1897B;
+            max-width: 47px;
+            width: 100%;
+            position: absolute;
+            top: 25px;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import './resets.scss';
+@import './breakpoints';
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Playfair Display R';
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 39px;
+    font-size: 40px;
+}
+
+.background {
+    margin: 0 auto;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+}
+
+
+
+
+

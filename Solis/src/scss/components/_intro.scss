@@ -1,0 +1,60 @@
+.intro {
+    position: relative;
+    padding-bottom: 152px;
+
+    &__title {
+        max-width: 523px;
+        margin-bottom: 20px;
+    }
+    
+    & h1 {
+        font-family: 'Playfair Display R';
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 52px;
+        & span {
+            color: #85BBB1;
+            font-family: 'Playfair Display RI';
+            font-style: italic;
+        }
+    }
+    
+    &__subtitle {
+        max-width: 439px;
+        font-family: 'Lato 300';
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 50px;
+    }
+}
+
+.button-intro {
+    background: none;
+    color: #F1897B;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Lato 700';
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+
+    &:focus {
+        border: 0.5px solid #E64F3A;
+    }
+
+
+    &:hover::after {
+        border-bottom: 13px solid #E64F3A;
+    }
+
+    &:after {
+        content: " ";
+        border-bottom: 13px solid #F1897B;
+        max-width: 112px;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 11px;
+        opacity: 0.3;
+    }
+}

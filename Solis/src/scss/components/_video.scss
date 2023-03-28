@@ -1,0 +1,55 @@
+
+.video {
+    &__wrapper {
+        padding: 120px 100px 120px 100px;
+    }
+
+    &__ipad-frame {
+        border: 1px solid #E4E4E4;
+        border-radius: 32px;
+        padding: 31px 70px 31px 30px;
+        position: relative;
+        margin-bottom: 50px;
+
+        &::before {
+            content: "";
+            border: 1px solid #E4E4E4;
+            border-radius: 32px;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            left: 8px;
+            top: 294px;
+        }
+
+        &::after {
+            content: "";
+            border: 1px solid #E4E4E4;
+            border-radius: 32px;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 14px;
+            top: 283px;
+        }
+    }
+
+    &__video {
+        opacity: 0.9;
+        border-radius: 8px;
+    }
+
+    &__caption :nth-child(1) {
+        font-family: 'Playfair Display R';
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+
+    &__caption :nth-child(2) {
+        font-family: 'Lato 300';
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 880px;
+    }
+}

@@ -1,0 +1,23 @@
+.h2 {
+    font-family: 'Playfair Display R'; 
+    font-size: 40px;
+    line-height: 48px;
+    color: $c-font;   
+}
+
+p {
+    font-family: 'Lato 300';
+    font-size: 18px;
+    line-height: 26px;
+    color: $c-font;   
+    opacity: 0.7;
+}
+
+.italic-span {
+    color: $c-font-italic;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Playfair Display RI';
+    font-weight: thin;
+}

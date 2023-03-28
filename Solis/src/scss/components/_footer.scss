@@ -1,0 +1,37 @@
+.footer {
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__light-font {
+        font-family: 'Lato 300';
+        font-size: 14px;
+        line-height: 26px;
+        color: #262A3F;
+        opacity: 0.6;
+    }
+
+    &__darker-font {
+        font-family: 'Lato R';
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: #262A3F;
+    }
+}
+
+.made-by :nth-child(1) {
+ margin-right: 12px;
+}
+.made-by a {
+    text-decoration: none;
+}
+
+.policy :nth-child(1) {
+ margin-right: 32px;
+}
+
