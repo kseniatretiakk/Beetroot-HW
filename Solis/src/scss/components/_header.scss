@@ -4,6 +4,27 @@
     line-height: 80px;
     padding: 24px 0;
     margin: 0 auto 150px auto;
+    max-width: 1440px;
+
+    @media screen and (max-width: 992px) {
+        margin: 0 auto 80px auto;
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 768px) { 
+        margin: 0 auto 40px auto;
+        padding: 10px 0;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin: 0 auto 30px auto;
+        padding: 7px 0; 
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+     padding: 0 15px;
+    }
 
     &__content {
      display: flex;
@@ -17,33 +38,66 @@
 
     &__logo {
         display: flex;
+
+        & a {
+            display: flex;
+        }
     }
+
+    &__burger {
+        display: none;
+        
+        @media screen and (max-width: 640px) {
+            display: block;
+        }
+    }
+
 }
 
 .nav {
     font-family: 'Lato 300';
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.08em;
     color: #262A3F;
+    position: relative;
   
     &__list {
         display: flex;
         gap: 30px;
-        position: relative;
+        
+        @media screen and (max-width: 768px) {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 640px) {
+            flex-direction: column;
+            padding: 0 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: white;
+            height: 100vh;
+        }
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+        }
+
         & a {
             color: #262A3F;
             text-decoration: none;
+            transition: all .4s ease;
+
+            @media screen and (max-width: 640px) {
+                text-align: left;
+                padding-right: 100px;
+                padding-bottom: 20px;
+                font-weight: 700;
+            }
         }
-        &:after{
-            content: " ";
-            border-bottom: 3px solid #F1897B;
-            max-width: 47px;
-            width: 100%;
-            position: absolute;
-            top: 25px;
-            left: 0;
+        & :hover{
+            color: #F1897B;
         }
     }
 }

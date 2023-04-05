@@ -3,15 +3,12 @@
 
 .wrapper {
     margin: 0 auto;
-    position: relative;
     padding-top: 30px;
 }
 
-.container {
-    width: 100%;
-    max-width: 1190px;
-    padding: 0 10px;
-    margin: 0 auto;
+a, 
+button {
+    cursor: pointer;
 }
 
 h2 {
@@ -20,17 +17,37 @@ h2 {
     font-size: 40px;
     line-height: 39px;
     font-size: 40px;
+
+    @media screen and (max-width: 992px) {
+        font-size: 35px;     
+    }
+
+    @media screen and (max-width: 768px) { 
+        font-size: 25px;
+        line-height: 29px;   
+    }
+
+    @media screen and (max-width: 640px) {
+        font-size: 21px;
+        line-height: 24px;  
+    }
 }
 
 .background {
     margin: 0 auto;
-    background-size: cover;
     position: absolute;
     top: 0;
     left: 0; 
     right: 0; 
     bottom: 0;
+
+    & img {
+        display: block;
+        margin: 0 auto;  
+    }
 }
+
+
 
 
 

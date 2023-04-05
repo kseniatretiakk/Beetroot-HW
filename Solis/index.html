@@ -7,268 +7,284 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet"/>    
+    <link href="/assets/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <title>Solis</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png"/>
 </head>
 <body>
-   
-    <div class="background">
-        <img src="./assets/images/first-screen-image.jpg" alt="Buildings on background">
-    </div>
-    <div class="wrapper">
-    <header class="header">
-        <div class="container">
-             <div class="header__content">
-                <div class="header__logo">
-                 <img class="logo" src="./assets/images/logo.png" alt="Company logo">
-                </div>
-                <div class="header__nav nav">
-                 <ul class="nav__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Use Cases</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
-                 </ul>
-                </div>
-             </div>   
+    <div class="overlay">
+        <div class="background">
+            <img src="./assets/images/first-screen-image.jpg" alt="Buildings on background">
         </div>
-    </header>
-
-    <main class="page">
-      <section class="intro">
-        <div class="container">
-            <div class="intro__content">
-                <div class="intro__title">
-                    <h1>
-                        A peer-to-peer stablecoin <span>clearinghouse</span> for the new economy
-                    </h1> 
-                </div>
-                <div class="intro__subtitle">
-                    <p>We are bringing real solutions to the payments world by leveraging public blockchains.</p>
-                </div>
-                <div class="intro__button btn">
-                    <button type="submit" class="button-intro">Join now</button>
-                </div>    
-            </div>
-        </div>
-      </section>
-
-      <section class="info">
-        <div class="container">
-            <div class="info__content">
-                <div class="info__background-picture">
-                    <img src="./assets/images/statistic-image.jpg" alt="">
-                </div>
-                <div class="info__second-block">
-                    <div class="second-block__numbers">
-                        <div class="numbers-potential">
-                            <div class="number">
-                              <span class="$">$</span>1 tril 
-                            </div>
-                            <div class="number-caption">
-                                Market cap potential
-                            </div>
-                        </div>
-                        <div class="numbers-deposit">
-                            <div class="number">
-                               <span class="$">$</span>3.65 mil  
-                            </div>
-                            <div class="number-caption">
-                                Deposited to platform
-                            </div>
-                        </div>
-                        <div class="stablecoins">
-                            <div class="number">
-                                12
-                            </div>
-                            <div class="number-caption">
-                                Stablecoins
-                            </div>
-                        </div>
+        <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                 <div class="header__content">
+                    <div class="header__logo"> 
+                        <a href="#"><img class="logo" src="./assets/images/logo.png" alt="Company logo">
+                        </a>
                     </div>
-
-                    <div class="second-block__text-button">
-                        <div class="second-block__text">
-                            <p>Solis group is a new venture created with investments from and collaboration with XBTO International, XBTO Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing house for stablecoins that seeks to promote the next phase of the market’s development.  <br>
-                               <br> The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and accessibility which are currently preventing the stablecoin market from reaching critical mass. </p>
-                        </div>
-                        <div class="second-block__button">
-                            <button class="btn">Contact sales</button>
-                        </div>
+                    <div class="header__nav nav">
+                     <ul class="nav__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Use Cases</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Resources</a></li>
+                     </ul>
                     </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-    </section>
-
-    <section class="benefits">
-        <div class="container">
-            <div class="benefits__wrapper">
-                <div class="benefits__cards">
-                    <div class="benefit__card">
-                      <h2>Qualified <span class="italic-span">traders</span> and liquidty <span class="italic-span"> solutions</span></h2>
-                      <p>Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD, Dai, Eurs and Gemini Dollar.</p>
+                    <div class="header__burger">
+                        <button class="burger is-active" id="burger" onclick="toggleMenu()">
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                        </button>
                     </div>
-                    <div class="benefit__card">
-                      <h2>Settlement/OTC API and <span class="italic-span">integration</span></h2>
-                      <p>Integrate OTC operations and settlements using our efficient API.</p>
-                    </div>
-                    <div class="benefit__card">
-                      <h2>The best <span class="italic-span">payments <br> solutions</span></h2>
-                      <p>For all stablecoin payments, from point-of-sale transactions to website solutions. If you use stablecoins in your business, Stablehouse is for you.</p>
-                    </div>
-                    <div class="benefit__card">
-                    <h2> <span class="italic-span">Treasury</span> and <span class="italic-span">returns</span> <br> for stablecoin stores</h2>
-                    <p>Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.</p>
-                    </div>
-                </div>
+                 </div>   
             </div>
-        </div>
-    </section>
-
-    <section class="slogan">
-        <div class="container">
-            <div class="slogan__wrapper">
-                <div class="slogan__content">
-                    <p>Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty over access and liquidity</p>
-                    <p>Lennon Burnett, Solis Group CEO</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video">
-        <div class="container">
-            <div class="video__wrapper">
-                <div class="video__ipad-frame">
-                    <div class="video__video">
-                        <iframe width="870" height="539" src="https://www.youtube.com/embed/vnbN9V_2Guk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
-                </div>
-                <div class="video__caption">
-                    <h2>A <span class="italic-span">powerful API</span> , easy to use user interface</h2>
-                    <p>Our API allows all members to interact with Stablehouse’s platform, from effecting transfers to deposits, withdrawals, creation and redemption and reporting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="promises">
-        <div class="container">
-            <div class="promises__wrapper">
-                <div class="promises__left-side">
-                <img src="./assets/images/features-background-image.png" alt="Gray background">
-                </div>
-                <div class="promises__right-side">
-                    <div class="right-side__first card">
-                        <div>On-Exchange Trading</div>
-                        <div>Instant <br> Passive Inventory earns fees</div>
-                    </div>
-                    <div class="right-side__second card">
-                        <div>On-Chain Swaps</div>
-                        <div>Low Counterparty risk
-                        <br> Direct transfers</div>
-                    </div>
-                    <div class="right-side__third card">
-                        <div>Time Settlement Swaps</div>
-                        <div>LBTC / Lightning and other sidechain swaps</div>
-                    </div>
-                    <div class="right-side__fourth card">
-                        <button class="promises__btn btn" type="button">JOIN NOW</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews">
-        <div class="container">
-           <div class="reviews__wrapper">
-            <div class="reviews__title-subtitle">
-                <h2>
-                    Client <span class="italic-span">reviews</span> 
-                </h2>
-                <p>
-                    Happy clients, happy us. Read our client reviews about the work process and results.
-                </p>
-            </div>
-
-            <div class="reviews__cards">
-                <div class="reviews__card first">
-                  <p class="review-text">Solis did a great job. Whether providing direct development support or giving us the opportunity to make our development updates, 
-                   Solis's web design expertise and support services were top notch! It didn't take long to stand up our website, and we were pleased with the design and layout of the graphics and information. 
-                  </p>
-                  <p>Dr. Jamika Burge</p>
-                </div>
-                <div class="reviews__card second">
-                  <p class="review-text"> Solis is a cutting edge company and knows the importance of excellence. 
-                    Having been in business for 21 years, I know when I’ve found a competent professional and more importantly a company with integrity. I highly recommend this company and am available for further reference if needed. </p>
-                  <p>Evie-Rose Prosse</p>
-                </div>
-                <div class="reviews__card third">
-                  <p class="review-text">I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a developer and can build a site from scratch. She understands functionality and is great at constructing a site that is robust and fully functioning. </p>
-                  <p>Elvis Mooney</p>
-                </div>
-            </div>
-           
-           </div>
-        </div>
-
-    </section>
-
-    <section class="contact-form">
-        <div class="container">
-            <div class="contact-form__wrapper">
-                <div class="contact-form__contact">
-                 <h2>Contact <span class="italic-span">our sales team</span></h2>
-                 <p>Our team is happy to answer your sales questions.
-                 <br> Fill out the form and we’ll be in touch as soon as possible.</p> 
-                </div>
-                <div class="contact-form__form">
-                 <form action="get" class="form">
-
-                 <label for="name"></label>
-                 <input type="text" id="name" placeholder="Your name" required>
-                 <label for="email"></label>
-                 <input type="email" id="email" placeholder="Email" required>
-                 <label for="text"></label>
-                 <input type="text" id="text" placeholder="Tell more" required>
-                 <button  class="form__btn btn" type="submit">send request</button>
-                 </form>
-                 
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="rights">
-                   <span class="footer__light-font">© 2020 Solisgroup. All Rights Reserved.</span> 
-                </div>
-                <div class="made-by">
-                      <span class="footer__light-font">made by</span>
-                      <a href="#"><span class="footer__darker-font">Zgraya.digital</span></a> 
-                </div>
-                <div class="policy">
-                    <span class="footer__darker-font"> User Agreement</span> 
-                    <span class="footer__darker-font"> Privacy Policy</span>
-                </div>
-            </div>
-           
-        </div>
-
-    </footer>  
-
-
+        </header>
     
+        <main class="page">
+          <section class="intro">
+            <div class="container">
+                <div class="intro__content">
+                    <div class="intro__title">
+                        <h1>
+                            A peer-to-peer stablecoin <span>clearinghouse</span> for the new economy
+                        </h1> 
+                    </div>
+                    <div class="intro__subtitle">
+                        <p>We are bringing real solutions to the payments world by leveraging public blockchains.</p>
+                    </div>
+                    <div class="intro__button btn">
+                        <button type="submit" class="button-intro">Join now</button>
+                    </div>    
+                </div>
+            </div>
+          </section>
+    
+          <section class="info">
+            <div class="container">
+                <div class="info__content">
+                    <div class="info__background-picture">
+                        <img src="./assets/images/statistic-image.jpg" alt="">
+                    </div>
+                    <div class="info__second-block">
+                        <div class="second-block__numbers">
+                            <div class="numbers-potential">
+                                <div class="number">
+                                  <span class="$">$</span>1 tril 
+                                </div>
+                                <div class="number-caption">
+                                    Market cap potential
+                                </div>
+                            </div>
+                            <div class="numbers-deposit">
+                                <div class="number">
+                                   <span class="$">$</span>3.65 mil  
+                                </div>
+                                <div class="number-caption">
+                                    Deposited to platform
+                                </div>
+                            </div>
+                            <div class="stablecoins">
+                                <div class="number">
+                                    12
+                                </div>
+                                <div class="number-caption">
+                                    Stablecoins
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="second-block__text-button">
+                            <div class="second-block__text">
+                                <p>Solis group is a new venture created with investments from and collaboration with XBTO International, XBTO Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing house for stablecoins that seeks to promote the next phase of the market’s development.  <br>
+                                   <br> The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and accessibility which are currently preventing the stablecoin market from reaching critical mass. </p>
+                            </div>
+                            <div class="second-block__button">
+                                <button class="btn">Contact sales</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+    
+        </section>
+    
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__wrapper">
+                    <div class="benefits__cards">
+                        <div class="benefit__card">
+                          <h2>Qualified <span class="italic-span">traders</span> and liquidty <span class="italic-span"> solutions</span></h2>
+                          <p>Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD, Dai, Eurs and Gemini Dollar.</p>
+                        </div>
+                        <div class="benefit__card">
+                          <h2>Settlement/OTC API and <span class="italic-span">integration</span></h2>
+                          <p>Integrate OTC operations and settlements using our efficient API.</p>
+                        </div>
+                        <div class="benefit__card">
+                          <h2>The best <span class="italic-span">payments <br> solutions</span></h2>
+                          <p>For all stablecoin payments, from point-of-sale transactions to website solutions. If you use stablecoins in your business, Stablehouse is for you.</p>
+                        </div>
+                        <div class="benefit__card">
+                        <h2> <span class="italic-span">Treasury</span> and <span class="italic-span">returns</span> <br> for stablecoin stores</h2>
+                        <p>Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="slogan">
+            <div class="container">
+                <div class="slogan__wrapper">
+                    <div class="slogan__content">
+                        <p>Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty over access and liquidity</p>
+                        <p>Lennon Burnett, Solis Group CEO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="video">
+            <div class="container">
+                <div class="video__wrapper">
+                    <div class="video__ipad-frame">
+                        <div class="video__video">
+                            <iframe class="video-frame" src="https://www.youtube.com/embed/vnbN9V_2Guk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                        </div>
+                    </div>
+                    <div class="video__caption">
+                        <h2>A <span class="italic-span">powerful API</span> , easy to use user interface</h2>
+                        <p>Our API allows all members to interact with Stablehouse’s platform, from effecting transfers to deposits, withdrawals, creation and redemption and reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="promises">
+            <div class="container">
+                <div class="promises__wrapper">
+                    <div class="promises__left-side">
+                    <img src="./assets/images/features-background-image.png" alt="Gray background">
+                    </div>
+                    <div class="promises__right-side">
+                        <div class="right-side__first card">
+                            <div>On-Exchange Trading</div>
+                            <div>Instant <br> Passive Inventory earns fees</div>
+                        </div>
+                        <div class="right-side__second card">
+                            <div>On-Chain Swaps</div>
+                            <div>Low Counterparty risk
+                            <br> Direct transfers</div>
+                        </div>
+                        <div class="right-side__third card">
+                            <div>Time Settlement Swaps</div>
+                            <div>LBTC / Lightning and other sidechain swaps</div>
+                        </div>
+                        <div class="right-side__fourth card">
+                            <button class="promises__btn btn" type="button">JOIN NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="reviews">
+            <div class="container">
+               <div class="reviews__wrapper">
+                <div class="reviews__title-subtitle">
+                    <h2>
+                        Client <span class="italic-span">reviews</span> 
+                    </h2>
+                    <p>
+                        Happy clients, happy us. Read our client reviews about the work process and results.
+                    </p>
+                </div>
+    
+                <div class="reviews__cards">
+                    <div class="reviews__card first">
+                      <p class="review-text">Solis did a great job. Whether providing direct development support or giving us the opportunity to make our development updates, 
+                       Solis's web design expertise and support services were top notch! It didn't take long to stand up our website, and we were pleased with the design and layout of the graphics and information. 
+                      </p>
+                      <p>Dr. Jamika Burge</p>
+                    </div>
+                    <div class="reviews__card second">
+                      <p class="review-text"> Solis is a cutting edge company and knows the importance of excellence. 
+                        Having been in business for 21 years, I know when I’ve found a competent professional and more importantly a company with integrity. I highly recommend this company and am available for further reference if needed. </p>
+                      <p>Evie-Rose Prosse</p>
+                    </div>
+                    <div class="reviews__card third">
+                      <p class="review-text">I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a developer and can build a site from scratch. She understands functionality and is great at constructing a site that is robust and fully functioning. </p>
+                      <p>Elvis Mooney</p>
+                    </div>
+                </div>
+               
+               </div>
+            </div>
+    
+        </section>
+    
+        <section class="contact-form">
+            <div class="container">
+                <div class="contact-form__wrapper">
+                    <div class="contact-form__contact">
+                     <h2>Contact <span class="italic-span">our sales team</span></h2>
+                     <p>Our team is happy to answer your sales questions.
+                     <br> Fill out the form and we’ll be in touch as soon as possible.</p> 
+                    </div>
+                    <div class="contact-form__form">
+                     <form action="get" class="form">
+    
+                     <label for="name"></label>
+                     <input type="text" id="name" placeholder="Your name" required>
+                     <label for="email"></label>
+                     <input type="email" id="email" placeholder="Email" required>
+                     <label for="text"></label>
+                     <input type="text" id="text" placeholder="Tell more" required>
+                     <button  class="form__btn btn" type="submit">send request</button>
+                     </form>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="rights">
+                       <span class="footer__light-font">© 2020 Solisgroup. All Rights Reserved.</span> 
+                    </div>
+                    <div class="made-by">
+                          <span class="footer__light-font">made by</span>
+                          <a href="#"><span class="footer__darker-font">Zgraya.digital</span></a> 
+                    </div>
+                    <div class="policy">
+                        <span class="footer__darker-font"> User Agreement</span> 
+                        <span class="footer__darker-font"> Privacy Policy</span>
+                    </div>
+                </div>
+               
+            </div>
+    
+        </footer>  
+    </div>
+</div>
    
-   </div>
+    
+<script>
+    function toggleMenu() {
+        const burger = document.getElementById('burger');
+        burger.classList.toggle('is-active');
+
+    }
+</script>
     
 </body>
 </html>

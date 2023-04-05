@@ -2,9 +2,23 @@
     position: relative;
     padding-bottom: 152px;
 
+    @media screen and (max-width: 640px) { 
+        padding-bottom: 140px;
+    }
+
     &__title {
         max-width: 523px;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) { 
+            max-width: 500px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 640px) { 
+            max-width: 350px;
+            margin-bottom: 15px;
+        }
     }
     
     & h1 {
@@ -17,6 +31,20 @@
             font-family: 'Playfair Display RI';
             font-style: italic;
         }
+        @media screen and (max-width: 992px) {
+            font-size: 35px;
+            line-height: 45px;
+        }
+
+        @media screen and (max-width: 768px) { 
+            font-size: 33px;
+            line-height: 40px;
+        }
+
+        @media screen and (max-width: 640px) { 
+            font-size: 23px;
+            line-height: 28px;
+        }
     }
     
     &__subtitle {
@@ -25,6 +53,21 @@
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 768px) { 
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 640px) { 
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 280px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -37,14 +80,20 @@
     font-size: 20px;
     line-height: 20px;
     position: relative;
+    
+    @media screen and (max-width: 640px) { 
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     &:focus {
         border: 0.5px solid #E64F3A;
     }
 
-
     &:hover::after {
-        border-bottom: 13px solid #E64F3A;
+        border-bottom: 15px solid #E64F3A;
+        transform: translate(-14px, -7px);
+        transition: all 0.4s ease;
     }
 
     &:after {
@@ -57,4 +106,6 @@
         left: 11px;
         opacity: 0.3;
     }
+
+    
 }

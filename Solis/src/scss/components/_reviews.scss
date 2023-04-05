@@ -3,30 +3,72 @@
 .reviews {
     &__wrapper {
         padding-bottom: 100px;
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 70px;
+        } 
     }
 
     &__title-subtitle {
 
         & h2 {
             margin-bottom: 20px;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 10px; 
+            }  
         }
 
         & p {
             max-width: 400px;
             margin-bottom: 50px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            } 
         }
     }
 
     &__cards {
-        display: grid;
-        gap: 30px;
-        grid-template: repeat(1, 3fr) / repeat(3, 1fr);  
+        display: flex;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 1280px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+         @media screen and (max-width: 992px) {
+            
+        }
     }
 
     &__card {
         max-width: 370px;
-        max-height: 340px;
-        padding: 30px 40px 30px 40px;
+        height: 340px;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+
+        &:after {
+            content: "";
+            background: rgba(25, 28, 41, 0.6);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 1280px) {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
 
         & :nth-child(2) {
         font-family: 'Playfair Display';
@@ -36,9 +78,16 @@
         line-height: 20px;
         color: #FFFFFF;
         opacity: 1;
+        z-index: 2;
+
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+            line-height: 20px;
+        }
         }
     }
 }      
+
 
 .review-text {
     font-family: 'Lato R';
@@ -48,17 +97,74 @@
     text-align: start;
     max-width: 290px;
     margin-bottom: 26px; 
+    z-index: 2;
+
+    @media screen and (max-width: 640px) {
+        font-size: 14px;
+        line-height: 25px;
+        opacity: 1;  
+    }
 }
 
 .first {
     background-size: cover;
     background-image: url(../images/image1.jpg);
+
+    @media screen and (max-width: 1280px) {
+        margin-left: 460px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-left: 350px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 270px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-left: 0;
+    }
 }
 .second {
     background-size: cover;
     background-image: url(../images/image2.jpg);
+
+    @media screen and (max-width: 1280px) {
+        margin-right: 460px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-right: 350px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-right: 270px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-right: 0;
+    }
+
 }
 .third {
     background-size: cover;
     background-image: url(../images/image3.jpg);
+    
+    @media screen and (max-width: 1280px) {
+        margin-left: 460px;
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-left: 350px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 270px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-left: 0;
+    }
+    
 }

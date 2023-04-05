@@ -26,6 +26,10 @@
 
 .made-by :nth-child(1) {
  margin-right: 12px;
+
+ @media screen and (max-width: 992px) { 
+    margin-right: 5px;
+ }
 }
 .made-by a {
     text-decoration: none;
@@ -33,5 +37,9 @@
 
 .policy :nth-child(1) {
  margin-right: 32px;
+
+ @media screen and (max-width: 992px) { 
+    margin-right: 10px;
+ }
 }
 

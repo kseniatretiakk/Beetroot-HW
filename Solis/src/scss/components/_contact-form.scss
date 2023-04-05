@@ -3,7 +3,11 @@
         border-bottom: 1px solid #E4E4E4;
         border-top: 1px solid #E4E4E4;
         padding: 60px 0 104px 0;
-        display: flex;
+        display: flex;   
+
+        @media screen and (max-width: 640px) { 
+            flex-direction: column;
+        }
     }
 
     &__contact {
@@ -11,8 +15,22 @@
         width: 100%;
         margin-right: 230px;
 
+        @media screen and (max-width: 992px) { 
+            margin-right: 100px;
+            width: 320px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 640px) { 
+            margin-bottom: 40px;
+        }
+
         & :nth-child(1) {
-            margin-bottom: 29px ;
+            margin-bottom: 29px;
+
+            @media screen and (max-width: 640px) { 
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -28,6 +46,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 640px) { 
+        max-width: 300px;
+    }
+
     & input {
         border-bottom: 1px solid rgb(38, 42, 63, 0.2);
         margin-bottom: 40px; 
@@ -42,6 +64,13 @@
         line-height: 44px;
         opacity: 0.5;
         letter-spacing: 0.08em;
+
+        @media screen and (max-width: 640px) { 
+            font-size: 14px;
+            line-height: 24px;
+            opacity: 0.5;
+        }
+        
     } 
 
     &__btn {
@@ -59,7 +88,9 @@
         }
 
         &:hover::after {
-            border-bottom: 13px solid #E64F3A;
+            border-bottom: 15px solid #E64F3A;
+            transform: translate(-11px, -7px);
+            transition: all 0.4s ease;
         }
     }
 }

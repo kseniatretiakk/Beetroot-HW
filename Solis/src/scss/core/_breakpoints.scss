@@ -18,4 +18,9 @@ $breakpoints: (
     @media screen and (max-width: map-get($breakpoints, $br)) {
         @content;
     }
+
+    @media screen and (max-width: 1536px) {
+        max-width: 1280px;
+    }
 }
+
