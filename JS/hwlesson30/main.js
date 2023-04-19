@@ -26,12 +26,12 @@ console.log( "You can download " + Math.floor(amountOfVideoOnDrive) + " videos")
 /* Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. 
 Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.*/
 
-const money = prompt ('Enter your badget');
-const priseOfOneBarOfChocolate = prompt ('Enter the price of one bar of chocolate');
+const money = prompt('Enter your badget');
+const priseOfOneBarOfChocolate = prompt('Enter the price of one bar of chocolate');
 const howManyCanBuy = (money / priseOfOneBarOfChocolate);
-const change = (money % priseOfOneBarOfChocolate );
-alert("You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + "." );
-console.log( "You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + "." );
+const change = (money % priseOfOneBarOfChocolate);
+alert("You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + ".");
+console.log("You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + ".");
 
 
 /* написати функцію яка приймає масив обʼєктів 
