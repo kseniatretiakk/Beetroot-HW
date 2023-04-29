@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png"/>
 </head>
 <body>
-    <div class="overlay">
+    <div class="overlay" id="overlay" onclick="toggleMenu()">
     </div>
         <div class="background">
             <img src="./assets/images/first-screen-image.jpg" alt="Buildings on background">
@@ -26,7 +26,7 @@
                         </a>
                     </div>
                     <div class="header__nav nav">
-                     <ul class="nav__list">
+                     <ul class="nav__list" id="menu" onclick="toggleMenu()">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Products</a></li>
@@ -36,7 +36,7 @@
                      </ul>
                     </div>
                     <div class="header__burger">
-                        <button class="burger is-active" id="burger" onclick="toggleMenu()">
+                        <button class="burger" id="burger" onclick="toggleMenu()">
                             <span class="burger__item"></span>
                             <span class="burger__item"></span>
                             <span class="burger__item"></span>
@@ -283,7 +283,10 @@
     function toggleMenu() {
         const burger = document.getElementById('burger');
         burger.classList.toggle('is-active');
-
+        const overlay = document.getElementById('overlay');
+        overlay.classList.toggle('show');
+        const nav = document.getElementById('menu');
+        menu.classList.toggle('is-open');
     }
 </script>
     

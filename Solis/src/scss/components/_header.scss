@@ -6,7 +6,8 @@
     margin: 0 auto 150px auto;
     max-width: 1440px;
     position: relative;
-    z-index: 1;
+    z-index: 9;
+    
 
     @media screen and (max-width: 992px) {
         margin: 0 auto 80px auto;
@@ -63,11 +64,13 @@
     line-height: 24px;
     letter-spacing: 0.08em;
     color: #262A3F;
+    
   
     &__list {
         display: flex;
         gap: 30px;
         position: relative;
+        transition: all .04s;
         
         @media screen and (max-width: 768px) {
             gap: 10px;
@@ -78,14 +81,22 @@
             padding: 15px 30px 0 30px;
             position: absolute;
             left: 0;
-            top: 0;
+            top: -30px;
             background: white;
             height: 100vh;
-            z-index: 2;
+            z-index: 10; 
+            visibility: hidden; 
+
+            &.is-open {
+                @media screen and (max-width: 640px) {
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+            }
         }
 
         @media screen and (max-width: 480px) {
-            flex-direction: column;
+           
         }
 
         & a {

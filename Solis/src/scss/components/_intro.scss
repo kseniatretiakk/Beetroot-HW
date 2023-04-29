@@ -6,6 +6,12 @@
         padding-bottom: 140px;
     }
 
+    &__content {
+        @media screen and (max-width: 992px) { 
+          
+        }
+    } 
+
     &__title {
         max-width: 523px;
         margin-bottom: 20px;
@@ -19,6 +25,7 @@
             max-width: 350px;
             margin-bottom: 15px;
         }
+
     }
     
     & h1 {

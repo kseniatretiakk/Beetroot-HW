@@ -150,7 +150,7 @@ p {
   margin: 0 auto 150px auto;
   max-width: 1440px;
   position: relative;
-  z-index: 1;
+  z-index: 9;
 }
 @media screen and (max-width: 992px) {
   .header {
@@ -211,6 +211,7 @@ p {
   display: flex;
   gap: 30px;
   position: relative;
+  transition: all 0.04s;
 }
 @media screen and (max-width: 768px) {
   .nav__list {
@@ -223,15 +224,17 @@ p {
     padding: 15px 30px 0 30px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -30px;
     background: white;
     height: 100vh;
-    z-index: 2;
+    z-index: 10;
+    visibility: hidden;
   }
 }
-@media screen and (max-width: 480px) {
-  .nav__list {
-    flex-direction: column;
+@media screen and (max-width: 640px) and (max-width: 640px) {
+  .nav__list.is-open {
+    transform: translateX(0);
+    visibility: visible;
   }
 }
 .nav__list a {
@@ -715,8 +718,8 @@ p {
   .slogan__content::after {
     scale: 0.7;
     display: block;
-    bottom: 270px;
-    right: 120px;
+    bottom: 276px;
+    right: 128px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -731,8 +734,8 @@ p {
   .slogan__content::after {
     scale: 0.5;
     display: block;
-    bottom: 220px;
-    right: 130px;
+    bottom: 186px;
+    right: 147px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -902,7 +905,7 @@ p {
 }
 @media screen and (max-width: 992px) {
   .video__ipad-frame::after {
-    right: 6px;
+    right: 20px;
     top: 215px;
   }
 }
@@ -916,7 +919,7 @@ p {
   .video__ipad-frame::after {
     width: 20px;
     height: 20px;
-    right: 4px;
+    right: 18px;
     top: 130px;
   }
 }
@@ -960,18 +963,24 @@ p {
 }
 @media screen and (max-width: 768px) {
   .video-frame {
-    width: 530px;
+    width: 520px;
   }
 }
 @media screen and (max-width: 640px) {
   .video-frame {
     width: 400px;
-    height: 220px;
+    height: 232px;
   }
 }
 @media screen and (max-width: 480px) {
   .video-frame {
-    width: 390px;
+    min-width: 350px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .video-frame {
+    max-width: 250px;
     height: 220px;
   }
 }
@@ -1030,10 +1039,10 @@ p {
 }
 @media screen and (max-width: 768px) {
   .promises__right-side {
-    right: 220px;
+    right: 191px;
     top: 29px;
     margin-right: -170px;
-    padding: 50px 0;
+    padding: 50px 30px;
     row-gap: 20px;
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -1042,10 +1051,10 @@ p {
 }
 @media screen and (max-width: 640px) {
   .promises__right-side {
-    right: 200px;
+    right: 185px;
     top: 50px;
     margin-right: -175px;
-    padding: 30px 0;
+    padding: 30px 30px;
     row-gap: 10px;
     -moz-column-gap: 10px;
          column-gap: 10px;
@@ -1067,7 +1076,8 @@ p {
   }
 }
 .promises__btn {
-  border: 1px solid #E4E4E4;
+  position: relative;
+  top: -11px;
   padding: 33px 94px 37px 87px;
 }
 @media screen and (max-width: 992px) {
@@ -1077,12 +1087,12 @@ p {
 }
 @media screen and (max-width: 768px) {
   .promises__btn {
-    padding: 40px 73px 37px 70px;
+    padding: 45px 60px;
   }
 }
 @media screen and (max-width: 640px) {
   .promises__btn {
-    padding: 40px 55px 25px 60px;
+    padding: 48px 40px;
   }
 }
 .promises__btn:after {
@@ -1102,14 +1112,30 @@ p {
 }
 @media screen and (max-width: 768px) {
   .promises__btn:after {
-    left: 81px;
-    top: 50px;
+    left: 83px;
+    top: 55px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .promises__btn:after {
+    left: 59px;
+    top: 56px;
   }
 }
 .promises__btn:hover::after {
   border-bottom: 15px solid #E64F3A;
   transform: translate(-14px, -7px);
   transition: all 0.4s ease;
+}
+@media screen and (max-width: 768px) {
+  .promises__btn:hover::after {
+    transform: translate(-24px, -7px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .promises__btn:hover::after {
+    transform: translate(-32px, -5px);
+  }
 }
 .promises .right-side__fourth {
   margin-bottom: 10px;
@@ -1131,6 +1157,7 @@ p {
   .card {
     background-color: #E4E4E4;
     opacity: 1;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1146,10 +1173,20 @@ p {
   color: #262A3F;
   max-height: 40px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .card :nth-child(1):not(button) {
+    font-family: "Playfair Display R";
+    font-size: 20px;
+    line-height: 24px;
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .card :nth-child(1):not(button) {
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 .card :nth-child(2) {
@@ -1162,7 +1199,7 @@ p {
 }
 @media screen and (max-width: 640px) {
   .card :nth-child(2) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
 }
@@ -1557,10 +1594,20 @@ p {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: 9;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=index.css.map */
