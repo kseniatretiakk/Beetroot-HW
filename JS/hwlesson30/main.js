@@ -3,7 +3,7 @@
 
 const num1 = 0.1;
 const num2 = 0.2;
-let sum = num1 + num2;
+const sum = num1 + num2;
 console.log(+sum.toFixed(2));
 
 
@@ -11,16 +11,14 @@ console.log(+sum.toFixed(2));
 
 let str = "1";
 const num = 2;
-str = 1;
-console.log( str + num );
+console.log(Number(str) + num);
 
 
 // Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 
 const driveCapacity = prompt ('Enter your drive capacity in GB');
-const amountOfVideoOnDrive = ((driveCapacity * 1024) / 820);
-alert( "You can download " + Math.floor(amountOfVideoOnDrive) + " videos");
-console.log( "You can download " + Math.floor(amountOfVideoOnDrive) + " videos");
+const amountOfVideoOnDrive = Math.floor((driveCapacity * 1024) / 820);
+alert(`You can download ${amountOfVideoOnDrive} videos`);
 
 
 /* Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. 
@@ -29,9 +27,8 @@ console.log( "You can download " + Math.floor(amountOfVideoOnDrive) + " videos")
 const money = prompt('Enter your badget');
 const priseOfOneBarOfChocolate = prompt('Enter the price of one bar of chocolate');
 const howManyCanBuy = (money / priseOfOneBarOfChocolate);
-const change = (money % priseOfOneBarOfChocolate);
-alert("You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + ".");
-console.log("You can buy " + Math.floor(howManyCanBuy) + " bar(s) and your change is " + change + ".");
+const change = Math.floor(money % priseOfOneBarOfChocolate);
+alert(`You can buy ${howManyCanBuy} bar(s) and your change is ${change}.`);
 
 
 /* написати функцію яка приймає масив обʼєктів 
@@ -50,7 +47,7 @@ function objectivesForUsers(arr) {
  }
  return arr;
 }
-console.log(objectivesForUsers(people))
+console.log(objectivesForUsers(people));
 
 
 

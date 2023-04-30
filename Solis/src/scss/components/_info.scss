@@ -93,6 +93,13 @@
             max-width: 130px;
             flex-direction: row;
         }
+
+        @media screen and (max-width: 480px) { 
+            gap: 0;
+            padding: 20px 0;
+            max-width: 80px;
+            flex-direction: row;
+        }
     }
 
     &__button {

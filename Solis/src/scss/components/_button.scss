@@ -1,4 +1,4 @@
-.btn {
+    .btn {
     background: none;
     color: #F1897B;
     letter-spacing: 0.08em;
@@ -9,8 +9,8 @@
     position: relative;
 
     @media screen and (max-width: 640px) { 
-        font-size: 16px;
-        line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
     }      
-    
+
 }

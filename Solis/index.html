@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet"/>    
-    <link href="/assets/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <title>Solis</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png"/>
 </head>
@@ -15,14 +14,14 @@
     <div class="overlay" id="overlay" onclick="toggleMenu()">
     </div>
         <div class="background">
-            <img src="./assets/images/first-screen-image.jpg" alt="Buildings on background">
+            <img src="./assets/images/first-screen-image.webp" alt="Buildings on background">
         </div>
         <div class="wrapper">
         <header class="header">
             <div class="container">
                  <div class="header__content">
                     <div class="header__logo"> 
-                        <a href="#"><img class="logo" src="./assets/images/logo.png" alt="Company logo">
+                        <a href="#"><img class="logo" src="./assets/images/logo.webp" alt="Company logo">
                         </a>
                     </div>
                     <div class="header__nav nav">
@@ -69,7 +68,7 @@
             <div class="container">
                 <div class="info__content">
                     <div class="info__background-picture">
-                        <img src="./assets/images/statistic-image.jpg" alt="">
+                        <img src="./assets/images/statistic-image.webp" alt="">
                     </div>
                     <div class="info__second-block">
                         <div class="second-block__numbers">
@@ -171,7 +170,7 @@
             <div class="container">
                 <div class="promises__wrapper">
                     <div class="promises__left-side">
-                    <img src="./assets/images/features-background-image.png" alt="Gray background">
+                    <img src="./assets/images/features-background-image.webp" alt="Gray background">
                     </div>
                     <div class="promises__right-side">
                         <div class="right-side__first card">
@@ -241,11 +240,11 @@
                     <div class="contact-form__form">
                      <form action="get" class="form">
     
-                     <label for="name"></label>
+                     
                      <input type="text" id="name" placeholder="Your name" required>
-                     <label for="email"></label>
+                     
                      <input type="email" id="email" placeholder="Email" required>
-                     <label for="text"></label>
+                     
                      <input type="text" id="text" placeholder="Tell more" required>
                      <button  class="form__btn btn" type="submit">send request</button>
                      </form>
@@ -260,7 +259,8 @@
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="rights">
-                       <span class="footer__light-font">© 2020 Solisgroup. All Rights Reserved.</span> 
+                       <span class="footer__light-font"> © 2020 Solisgroup. </span> 
+                       <span class="footer__light-font"> All Rights Reserved. </span>
                     </div>
                     <div class="made-by">
                           <span class="footer__light-font">made by</span>
@@ -277,18 +277,10 @@
         </footer>  
     </div>
 
+
    
     
-<script>
-    function toggleMenu() {
-        const burger = document.getElementById('burger');
-        burger.classList.toggle('is-active');
-        const overlay = document.getElementById('overlay');
-        overlay.classList.toggle('show');
-        const nav = document.getElementById('menu');
-        menu.classList.toggle('is-open');
-    }
-</script>
+<script src="js/main.js"></script>
     
 </body>
 </html>
