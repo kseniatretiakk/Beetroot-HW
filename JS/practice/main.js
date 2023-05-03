@@ -132,6 +132,14 @@ if(mark === 1) {
 
 
 
+function enterData() { 
+  const userData = prompt("Enter your name and surname ")
+  console.log(`Hi, ${userData}`);
+}
+
+enterData();
+
+
 
 
 
