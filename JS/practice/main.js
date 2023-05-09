@@ -89,55 +89,103 @@
 //     object value: ${usersAges[item]}`);
 //   };
 
-const someString = "Hello World";
-for(const item of someString) {
-console.log(item);
-};
+// const someString = "Hello World";
+// for(const item of someString) {
+// console.log(item);
+// };
 
-const numberList = [1, 2, 3, 4, 5, 6, 7];
-let sum = 0;
-for(let number of numberList) {
-    sum = sum + number;
-};
-console.log(sum);
-
-
-const fruit = "apple"
-fruit !== "banana"
- ? console.log("Is regular")
- : console.log("It's a magic");
-
- const email = "someEmail.gmail.com";
- const adminEmail = "admin@gmail.com";
- adminEmail === "someEmail.gmail.com"
- ? console.warn(`Hello admin ${adminEmail}`)
- : console.log("Hello user");
+// const numberList = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0;
+// for(let number of numberList) {
+//     sum = sum + number;
+// };
+// console.log(sum);
 
 
-const mark = +prompt("Enter the mark from 1 to 5");
-if(mark === 1) {
-    console.log("Invalid grade");
-} else if (mark === 2) {
-    console.log("Failed");
-} else if (mark === 3) {
-    console.log("Funsatisfactory");
-}  else if (mark === 4) {
-    console.log("Good");
-} else if (mark === 5) {
-    console.log("Excellent");
-} else {
-    console.log("Error");
-};
+// const fruit = "apple"
+// fruit !== "banana"
+//  ? console.log("Is regular")
+//  : console.log("It's a magic");
+
+//  const email = "someEmail.gmail.com";
+//  const adminEmail = "admin@gmail.com";
+//  adminEmail === "someEmail.gmail.com"
+//  ? console.warn(`Hello admin ${adminEmail}`)
+//  : console.log("Hello user");
+
+
+// const mark = +prompt("Enter the mark from 1 to 5");
+// if(mark === 1) {
+//     console.log("Invalid grade");
+// } else if (mark === 2) {
+//     console.log("Failed");
+// } else if (mark === 3) {
+//     console.log("Funsatisfactory");
+// }  else if (mark === 4) {
+//     console.log("Good");
+// } else if (mark === 5) {
+//     console.log("Excellent");
+// } else {
+//     console.log("Error");
+// };
 
 
 
 
-function enterData() { 
-  const userData = prompt("Enter your name and surname ")
-  console.log(`Hi, ${userData}`);
-}
+// function enterData() { 
+//   const userData = prompt("Enter your name and surname ")
+//   console.log(`Hi, ${userData}`);
+// }
 
-enterData();
+// enterData();
+
+// const dogCharacters = {
+//     paws: {
+//      rigth: 1,
+//      left: 1,
+//      backleft: 1,
+//      backright: 1,
+//     },
+//     tail: 1,
+//     color: ['red', 'white'],
+//     makeNoise () {
+//         console.log ('Dog voice')
+//     }
+// }
+
+// makeNoise();
+
+
+const doggy = {
+    name: "Rox",
+    color: "brown",
+    paws: { right: 2, left: 2, },
+    toys: [],
+  
+    sound: () => {
+      console.log('Гав-гав!');
+    },
+  
+    giveToy (newToy) {
+      this.toys.push(newToy)
+    },
+  
+    showToy () {
+      console.log(this.toys);
+    },
+
+    removeToys() {
+        this.toys = [];
+      },
+  }
+
+  console.log(doggy);
+
+
+  
+
+
+
 
 
 

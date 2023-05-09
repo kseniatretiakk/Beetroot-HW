@@ -23,39 +23,39 @@ switch (true) {
 // // який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
 
 const inputNumber = parseInt(prompt("Enter random number from 0 to 9"));
-switch (inputNumber) {
-    case 0: 
-    alert("Same button )");
-    break;
-    case 1: 
-    alert("Same button !");
-    break;
-    case 2: 
-    alert("Same button @");
-    break;
-    case 3: 
-    alert("Same button #");
-    break;
-    case 4: 
-    alert("Same button $");
-    break;
-    case 5: 
-    alert("Same button %");
-    break;
-    case 6: 
-    alert("Same button ^");
-    break;
-    case 7: 
-    alert("Same button &");
-    break;
-    case 8: 
-    alert("Same button *");
-    break;
-    case 9: 
-    alert("Same button (");
-    break;
-    default:
-    alert("Invalid value");
+ switch (inputNumber) {
+  case  0: 
+  alert("Same button )");
+  break;
+  case  1: 
+  alert("Same button !");
+  break;
+  case  2: 
+  alert("Same button @");
+  break;
+  case  3: 
+  alert("Same button #");
+  break;
+  case  4: 
+  alert("Same button $");
+  break;
+  case  5: 
+  alert("Same button %");
+  break;
+  case  6: 
+  alert("Same button ^");
+  break;
+  case  7: 
+  alert("Same button &");
+  break;
+  case  8: 
+  alert("Same button *");
+  break;
+  case  9: 
+  alert("Same button (");
+  break;
+  default:
+  alert("Invalid value");
 }
 
 // Підрахуй суму всіх чисел в заданому користувачем діапазоні.
@@ -63,8 +63,8 @@ switch (inputNumber) {
 const range = prompt ("Enter any number range with coma delimiter (e.g. 3,9)");
 const arr = range.split(",");
 let summ = 0;
-for (i= Number(arr[0]); i<=arr[1]; i++) {
- summ += i;
+for (index = Number(arr[0]); index <= arr[1]; index++) {
+ summ += index;
 }
 alert(summ);
 
@@ -89,9 +89,9 @@ alert(`The biggest common divisor of ${number1} and ${number2} is ${gcd}`);
 
 const number = parseInt(prompt("Enter rundom number: "));
 
-for (let i = 1; i <= number; i++) {
+for (let index = 1; index <= number; index++) {
   if (number % i === 0) {
-    console.log(i);
+    console.log(index);
   }
 }
 
@@ -115,11 +115,11 @@ alert("Yes, your number is palindrom!");
 
 const userDiscount = prompt("Tell us your expenses, and we can count your discount");
 if (userDiscount >= 200 && userDiscount <= 300) {
-  alert(`Your discount is 3%, so you need to pay ${Math.floor(userDiscount * 0.97)}`);
+  alert(`Your discount is 3%, so you need to pay ${Math.trunc(userDiscount * 0.97)}`);
 } else if (userDiscount > 300 && userDiscount <= 500) {
-  alert(`Your discount is 5%, so you need to pay ${Math.floor(userDiscount * 0.95)}`);
+  alert(`Your discount is 5%, so you need to pay ${Math.trunc(userDiscount * 0.95)}`);
 } else if (userDiscount > 500) {
-  alert(`Your discount is 7%, so you need to pay ${Math.floor(userDiscount * 0.93)}`);
+  alert(`Your discount is 7%, so you need to pay ${Math.trunc(userDiscount * 0.93)}`);
 } else {
   alert(`Sorry, you don't have any discount`);
 }
@@ -133,8 +133,8 @@ let zero = 0;
 let evenNumber = 0;
 let oddNumber = 0;
 
-for (let i = 1; i <= 10; i++) {
-  let num = parseInt(prompt(`Enter a number №${i}:`));
+for (let index = 1; index <= 10; index++) {
+  let num = parseInt(prompt(`Enter a number №${index}:`));
   numbers.push(num);
   if (num > 0) {
     positiveNumbers++;
