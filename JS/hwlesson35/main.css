@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(44, 44, 44);
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.playlist {
+  padding: 30px 0 10px 0;
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  margin: 20vh auto;
+  border: 3px solid rgb(3, 133, 3);
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.playlist img {
+  max-width: 50px;
+  border-radius: 4px;
+}
+
+.playlist__sound {
+  margin-left: 15px;
+  display: flex;
+  gap: 10px;
+  visibility: hidden;
+}
+
+.caption {
+  display: inline;
+  color: white;
+  font-size: 8px;
+  padding-top: 12px;
+  line-height: 12px;
+}
+
+.caption :first-child {
+  font-size: 12px;
+}
+
+.three-dots {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  top: 20px;
+}
+
+.dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.dots:first-child {
+  top: -2px;
+}
+
+.dots:last-child {
+  top: 4px;
+}
+
+
+/* Кнопка */
+.playlist__btn {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(3, 133, 3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+  bottom: 250px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.336);
+}
+
+.playlist__btn:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid rgb(0, 0, 0);
+  position: absolute;
+  bottom: 16px;
+  right: 10px;
+  rotate: 90deg;
+}
+
+
+
+
+
+
