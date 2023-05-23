@@ -183,7 +183,7 @@ const doggy = {
 
 
   
-
+ alert( document.cookie );
 
 
 

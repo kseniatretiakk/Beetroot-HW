@@ -1,0 +1,28 @@
+body {
+  box-sizing: border-box;
+}
+
+.text-frame {
+  display: block;
+  width: 500px;
+  background-color: rgba(157, 84, 224, 0.622);
+  border-radius: 15px;
+  margin: 30vh auto;
+  padding: 90px 0;
+  position: relative;
+}
+
+::placeholder {
+  text-align: center;
+  color: rgba(11, 105, 11, 0.723);
+  font-size: 36px;
+}
+
+.scale {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 483px;
+  bottom: 107px;
+}
+
