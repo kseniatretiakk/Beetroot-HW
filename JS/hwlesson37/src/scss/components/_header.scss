@@ -1,0 +1,54 @@
+.header {
+  width: 1400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: $c-brown-light;
+
+  &__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+.nav {
+  &__logo {
+   a {
+    display: block;
+    height: inherit;
+   }
+  }
+
+  // &__menu {
+   
+  // }
+
+  &__list {
+   display: flex;
+   align-items: center;
+   list-style: none;
+
+   a {
+    color: $c-black;
+    text-decoration: none;
+    font-family: 'M500';
+    font-size: 20px;
+    line-height: 24px;
+    padding: 28px 15px;
+   }
+
+   a:hover {
+    color: white;
+    background-color: $c-tomato-light ;
+   }
+
+   
+  }
+
+  &__search-sign-in {
+    display: flex;
+    gap: 30px;
+  }
+}
+

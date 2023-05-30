@@ -1,0 +1,515 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "M500";
+  border: 0;
+  background: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  width: 1400px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #F8F1EA;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo a {
+  display: block;
+  height: inherit;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav__list a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "M500";
+  font-size: 20px;
+  line-height: 24px;
+  padding: 28px 15px;
+}
+.nav__list a:hover {
+  color: white;
+  background-color: #F16A50;
+}
+.nav__search-sign-in {
+  display: flex;
+  gap: 30px;
+}
+
+.intro__h1 {
+  display: none;
+}
+.intro__slider {
+  width: 1400px;
+  height: 700px;
+}
+.intro__slider img {
+  max-width: 1400px;
+  height: 700px;
+}
+.intro__h2 {
+  position: absolute;
+  width: 400px;
+  height: 110px;
+  right: 100px;
+  top: 123px;
+  z-index: 2;
+}
+.intro__h2 h2 {
+  font-family: "M700";
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F8F1EA;
+}
+.intro__btn {
+  position: relative;
+  z-index: 2;
+}
+.intro__btn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 55px;
+  font-family: "M500";
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  width: 227px;
+  height: 52px;
+  right: 178px;
+  bottom: 361px;
+  border: 2px solid #F8F1EA;
+}
+.intro__btn button:hover {
+  background-color: #F16A50;
+  border: none;
+}
+
+.products {
+  margin: 70px auto;
+}
+.products__h2 {
+  padding-bottom: 54px;
+  font-family: "M700";
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.products__slider {
+  width: 1200px;
+  margin-bottom: 100px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.products__slider .end {
+  visibility: hidden;
+}
+.products__btn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 55px;
+  position: relative;
+  width: 227px;
+  height: 50px;
+  left: calc(50% - 100px);
+  top: 0;
+  border: 2px solid #000000;
+  font-family: "M500";
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.partners__bg {
+  width: 1400px;
+  padding: 70px 0;
+  background-color: #F8F1EA;
+  position: relative;
+}
+.partners__h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.partners__h2 h2 {
+  font-family: "M700";
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.partners__slider {
+  margin: 0 auto;
+  width: 1186px;
+}
+
+.partners-slider__item {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 1400px;
+  height: 100px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Слайдер */
+.intro__slider .slick-slider {
+  min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.intro__slider .slick-list {
+  overflow-x: hidden;
+}
+
+/* Лента слайдов */
+.intro__slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Точки (булиты) */
+.intro__slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  top: -60px;
+}
+
+.intro__slider .slick-dots li {
+  list-style: none;
+}
+
+/* Активная точка */
+.intro__slider .slick-dots li.slick-active button {
+  background-color: #F16A50;
+}
+
+/* Элемент точки */
+.intro__slider .slick-dots li button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(248, 241, 234, 0.7);
+  border-radius: 50px;
+}
+
+.slide__item {
+  position: relative;
+}
+.slide__item:after {
+  content: "";
+  background-image: url(../../../assets/images/first-slider/gradient.png);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Слайдер */
+.products__slider .slick-slider {
+  min-width: 0;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.products__slider .slick-list {
+  overflow-x: hidden;
+}
+
+/* Лента слайдов */
+.products__slider .slick-track {
+  display: flex;
+  gap: 14px;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+.products__slider .slick-slide.slick-center {
+  border: 1px solid #F16A50;
+}
+.products__slider .slick-slide.slick-center img {
+  scale: 1.13;
+}
+
+/* Клонированный слайд */
+/* Стрелка */
+.products__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+}
+
+/* Стрелка влево */
+.products__slider .slick-arrow.slick-prev {
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  left: -60px;
+  background-image: url("../../assets/images/second-slider/prev.svg");
+}
+.products__slider .slick-arrow.slick-prev:hover {
+  background-image: url("../../assets/images/second-slider/prev-orange.svg");
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  left: -60px;
+}
+
+/* Стрелка вправо */
+.products__slider .slick-arrow.slick-next {
+  right: -60px;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  background-image: url("../../assets/images/second-slider/next-active.svg");
+}
+.products__slider .slick-arrow.slick-next:hover {
+  background-image: url("../../assets/images/second-slider/next-active-orange.svg");
+  right: -60px;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+}
+
+/* Стрелка не активная */
+.products-slider__item {
+  width: 224px;
+  height: 437px;
+  border: 1px solid #F8F1EA;
+  padding: 0 10px 20px 10px;
+}
+.products-slider__status {
+  width: 60px;
+  height: 20px;
+  background-color: #F16A50;
+  color: #F8F1EA;
+  font-family: "M500";
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 12;
+}
+.products-slider__item .sold {
+  background-color: #F8F1EA;
+  color: black;
+}
+.products-slider__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products-slider__img {
+  margin-bottom: 18px;
+}
+.products-slider__title {
+  width: 204px;
+  text-align: center;
+}
+.products-slider__title div {
+  font-family: "M600";
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.products-slider__price div {
+  font-family: "M700";
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Слайдер */
+.partners__slider.slick-slider {
+  min-width: 0;
+  position: relative;
+  width: 1200px;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.partners__slider .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.partners__slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.partners__slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  font-size: 0;
+}
+
+/* Стрелка влево */
+.partners__slider .slick-arrow.slick-prev {
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  left: -60px;
+  background-image: url("../../assets/images/third-slider/prev.svg");
+}
+.partners__slider .slick-arrow.slick-prev:hover {
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  left: -60px;
+  background-image: url("../../assets/images/third-slider/prev-orange.svg");
+}
+
+/* Стрелка вправо */
+.partners__slider .slick-arrow.slick-next {
+  right: -60px;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  background-image: url("../../assets/images/third-slider/next.svg");
+}
+.partners__slider .slick-arrow.slick-next:hover {
+  right: -60px;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  background-image: url("../../assets/images/third-slider/next-orange.svg");
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки *//*# sourceMappingURL=index.css.map */

@@ -1,0 +1,141 @@
+/* Слайдер */
+.products__slider .slick-slider{
+  min-width: 0;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.products__slider .slick-list {
+  overflow-x: hidden;
+}
+.slick-list {
+}
+/* Лента слайдов */
+.products__slider .slick-track{
+  display: flex;
+  gap: 14px; 
+}
+/* Слайд */
+.products__slider .slick-slide{
+}
+/* Слайд активный (показывается) */
+.products__slider .slick-slide.slick-active{
+  
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+  
+}
+/* Слайд по центру */
+.products__slider .slick-slide.slick-center{
+  border: 1px solid $c-tomato-light;
+  img {
+    scale: 1.13;
+  }
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.products__slider .slick-arrow{ 
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+}
+/* Стрелка влево */
+.products__slider .slick-arrow.slick-prev{
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  left: -60px;
+  background-image: url('../../assets/images/second-slider/prev.svg');
+  
+  &:hover{
+    background-image: url('../../assets/images/second-slider/prev-orange.svg');
+    background-size: 100%;
+    width: 40px;
+    height: 74px;
+    left: -60px;
+  }
+}
+/* Стрелка вправо */
+.products__slider .slick-arrow.slick-next{
+  right: -60px;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+  background-image: url('../../assets/images/second-slider/next-active.svg');
+  
+  &:hover{
+    background-image: url('../../assets/images/second-slider/next-active-orange.svg');
+    right: -60px;
+    background-size: 100%;
+    width: 40px;
+    height: 74px;
+  }
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+
+.products-slider {
+  &__item {
+    width: 224px;
+    height: 437px;
+    border: 1px solid $c-brown-light;
+    padding: 0 10px 20px 10px;
+  }
+
+  &__status {
+    width: 60px;
+    height: 20px;
+    background-color: $c-tomato-light;
+    color: $c-brown-light;
+    font-family: 'M500';
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative; 
+    z-index: 12;
+  }
+
+  &__item .sold {
+    background-color: $c-brown-light;
+    color: black;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 18px;
+  }
+  &__title {
+    width: 204px;
+    text-align: center;
+  
+    div {
+    font-family: 'M600';
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    }
+  }
+
+  &__price div {
+    font-family: 'M700';  
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+}

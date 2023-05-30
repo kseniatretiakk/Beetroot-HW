@@ -1,0 +1,97 @@
+/* Слайдер */
+.intro__slider .slick-slider{
+min-width: 0;
+}
+
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized{ 
+
+// }
+
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.intro__slider .slick-list {
+  overflow-x: hidden;
+}
+/* Лента слайдов */
+.intro__slider .slick-track {
+display: flex;
+align-items: flex-start;
+}
+
+// /* Слайд */
+// .slick-slide{}
+
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active{}
+
+// /* Слайд основной */
+// .slick-slide.slick-current{
+
+// }
+
+// /* Слайд по центру */
+// .slick-slide.slick-center{}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+// /* Стрелка */
+// .slick-arrow{}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev{}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next{}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+
+
+
+/* Точки (булиты) */
+.intro__slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  top: -60px;
+}
+.intro__slider .slick-dots li{
+  list-style: none;
+}
+/* Активная точка */
+.intro__slider .slick-dots li.slick-active button{
+ background-color: $c-tomato-light;
+}
+
+
+/* Элемент точки */
+.intro__slider .slick-dots li button{
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: $c-dot-inactive;
+  border-radius: 50px;
+}
+
+// .intro__slider {
+
+// }
+// .intro__slider  .slick-arrow{
+
+// }
+
+.slide__item {
+ position: relative;
+ &:after {
+  content: "";
+  background-image: url(../../../assets/images/first-slider/gradient.png);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  }
+}
