@@ -155,7 +155,7 @@ document.querySelector('.search-block').appendChild(searchWindowPlusButton);
 // });
 
 
-const URL = 'http://www.omdbapi.com/?apikey=a02197f4&s=';
+const URL = 'https://www.omdbapi.com/?apikey=a02197f4&s=';
 
 const processTheData = async (value, type, page) => {
   const response = await fetch(`${URL}${value}&type=${type}&page=${page}`);
